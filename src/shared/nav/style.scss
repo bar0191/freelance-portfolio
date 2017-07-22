@@ -39,7 +39,6 @@
   }
 
   .nav-head {
-    border-bottom: 1px solid rgba(255,255,255,0.12);
     padding: .8rem 1rem;
     text-align: center;
     position: relative;
@@ -77,9 +76,8 @@
   }
   .nav-list {
     padding: 0;
-    margin: 0;
     .icon {
-      font-size: 21px;
+      font-size: 28px;
       text-align: center;
     }
   }
@@ -102,7 +100,11 @@
     line-height: 2.0em;
     border-bottom: 1px solid rgba(255,255,255,0.12);
     &:hover {
-      color: #000;
+      color: $site-green;
+      border-right: 4px solid $site-green;
+    }
+    &:first-child {
+      border-top: 1px solid rgba(255,255,255,0.12);
     }
   }
   .nav-list li > a.active {

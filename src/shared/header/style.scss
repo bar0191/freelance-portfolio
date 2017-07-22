@@ -7,8 +7,24 @@
   @media(min-width: 992px) {
     display: none;
   }
+  .site-head-title {
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Oxygen', Helvetica, sans-serif;
+    margin-left: 15px;
+    line-height: 50px;
+    color: white;
+  }
 }
 
 .menu-icon {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
   float: right;
+  padding: 6px;
+  margin-right: 10px;
 }
