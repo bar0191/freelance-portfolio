@@ -1,19 +1,38 @@
 import React, {Component} from 'react';
+import Nav from './shared/nav';
+import SiteHead from './shared/header';
+import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router';
 
 //styles
 import './App.scss';
 
-class App extends Component {
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {navMini: false}
+  }
+
+  toggleNav = (e) => {
+    e.preventDefault();
+    this.setState({navMini: !this.state.navMini});
+  }
+  hideNav = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    this.setState({navMini: false})
+  }
   render() {
+    let navMini = this.state.navMini;
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2 className="App-title"> ☢ custom-react-scripts ☢ </h2>
-          <div className="App-subtitle"> allow custom config for create-react-app without ejecting</div>
+      <div className="app-wrapper">
+        <Nav mini={navMini} />
+        <div className="content-container ">
+          <div className="menu-dropshadow" style={{display: (navMini ? 'block' : 'none')}} onClick={this.hideNav}/>
+          <SiteHead toggleNav={this.toggleNav}/>
+          {this.props.children}
         </div>
       </div>
     )
   }
 }
 
-export default App;

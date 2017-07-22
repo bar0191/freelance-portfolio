@@ -1,20 +1,24 @@
-.App {
-  &-header {
-    background-color: #222;
-    height: 180px;
-    padding: 20px;
-    color: white;
-    text-align: center;
-  }
+.app-wrapper {
+  display: block;
+  min-height: 100vh;
+}
 
-  &-intro {
-    font-size: large;
+.content-container {
+  width: 100%;
+  transform: translate(0,0);
+  position: relative;
+  @media(min-width: 992px) {
+    &.full {
+      width: calc(100% - .75em);
+      transform: translate(.75em, 0);
+    }
+    width: calc(100% - 150px);
+    transform: translate(150px, 0);
   }
 }
 
-.configs {
-  li {
-    margin: 15px 0px;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-

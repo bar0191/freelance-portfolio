@@ -1,0 +1,14 @@
+@import '../variables';
+
+.site-head {
+  height: 50px;
+  width: 100%;
+  background-color: $site-dark;
+  @media(min-width: 992px) {
+    display: none;
+  }
+}
+
+.menu-icon {
+  float: right;
+}
