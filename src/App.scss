@@ -22,6 +22,95 @@
   }
 }
 
+.page-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* padding: 0; */
+  padding: 25px 5%;
+  background-color: transparent;
+  /* background-attachment: fixed; */
+  /* background-position: 50%; */
+  /* background-size: cover; */
+  -webkit-background-size: cover;
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  .sub-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1240px;
+    -webkit-perspective: 1500px;
+    -moz-perspective: 1500px;
+    perspective: 1500px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    .card-page {
+      background-color: #222;
+      visibility: visible;
+      z-index: 90;
+      opacity: 1;
+      overflow: hidden;
+      height: 100%;
+      min-height: 100%;
+      .inner-container {
+        position: relative;
+        padding: 20px 60px 50px;
+        .border-block {
+          display: inline-block;
+          position: absolute;
+          background: transparent;
+          width: 110px;
+          height: 110px;
+          border-top: 3px solid #00FF96;
+          border-left: 3px solid #00FF96;
+          left: 20px;
+          top: 10px;
+          z-index: 0;
+        }
+        .card-title-section {
+          position: relative;
+          margin-bottom: 40px;
+          text-align: center;
+          .card-title-wrap {
+            display: inline-block;
+            position: relative;
+            text-align: right;
+            > h1 {
+              color: #555;
+            }
+            .title {
+              display: block;
+              width: 100%;
+              position: relative;
+              margin: 12px 0 0;
+              font-size: 60px;
+              line-height: 1.1em;
+              z-index: 1;
+            }
+            .subtitle-section {
+              display: inline-block;
+              position: relative;
+              margin: 0;
+              color: #fff;
+              background-color: darken(#00FF96,15%);
+              padding: 3px 10px;
+              font-size: 14px;
+              font-weight: 200;
+              text-align: center;
+              z-index: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 body {
   margin: 0;
   padding: 0;

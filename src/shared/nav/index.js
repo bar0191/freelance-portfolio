@@ -52,7 +52,7 @@ class NavList extends React.Component {
           <li><Link to="/about"><IconUser className="icon"/><br/>About Me</Link></li>
           <li><Link to="/resume"><IconCard className="icon"/><br/>Resume</Link></li>
           <li><Link to="/portfolio"><IconCase className="icon"/><br/>Portfolio</Link></li>
-          <li><Link to="/portfolio"><IconMail className="icon"/><br/>Contact</Link></li>
+          <li><Link to="/contact"><IconMail className="icon"/><br/>Contact</Link></li>
         </ul>
       </div>
       {/* end scroll-area */}

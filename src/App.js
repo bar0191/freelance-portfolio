@@ -33,7 +33,7 @@ export default class App extends Component {
       top: 0,
       left: 0,
       zIndex: '-9999'
-    }
+    };
 
     return (
       <div className="app-wrapper">
