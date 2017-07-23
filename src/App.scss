@@ -111,6 +111,16 @@
   }
 }
 
+.scrollarea .scrollbar-container {
+  opacity: 0;
+  &.vertical {
+    width: 15px;
+  }
+}
+.scrollarea .scrollbar-container:hover {
+  background: transparent;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -123,5 +133,18 @@ h2 {
   font-size: 3.0vh;
 }
 p {
-  font-size: 3vmin;
+  font-size: 0.875em;
+  margin: 0 0 10px;
+  font-weight: 300;
+  color: #f3f3f3;
+}
+
+h3 {
+  color: #f3f3f3;
+  font-family: 'Oxygen', Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.17em;
 }

@@ -35,18 +35,21 @@ class NavList extends React.Component {
     this.setState({
       selected: (c.indexOf('selected') >= 0) ? '' : index
     })
-  }
+  };
   handleOpen = (index, e) => {
     e.stopPropagation();
     this.setState({
       selected: index
     })
-  }
+  };
+
 
   render() {
+    const NavStyle = {
+      padding: '25px 0 30px'
+    };
     return (
-      <ScrollArea className="nav-list-container" horizontal={false} verticalScrollbarStyle={{width: '4px', marginLeft: '10px'}}>
-      <div>
+      <div style={NavStyle}>
         <ul className="nav-list">
           <li><Link to="/"><IconHome className="icon"/><br/>Home</Link></li>
           <li><Link to="/about"><IconUser className="icon"/><br/>About Me</Link></li>
@@ -55,8 +58,6 @@ class NavList extends React.Component {
           <li><Link to="/contact"><IconMail className="icon"/><br/>Contact</Link></li>
         </ul>
       </div>
-      {/* end scroll-area */}
-    </ScrollArea>
     )
   }
 }
@@ -64,7 +65,9 @@ class NavList extends React.Component {
 
 export default (props) => (
   <nav className={`site-nav ${props.mini ? 'mini' : ''}`} role="navigation">
+    <ScrollArea className="nav-list-container" horizontal={false} verticalScrollbarStyle={{width: '4px', marginLeft: '10px'}}>
     <NavHead {...props}/>
     <NavList {...props}/>
+    </ScrollArea>
   </nav>
 );

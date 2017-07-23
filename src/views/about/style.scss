@@ -1,0 +1,25 @@
+.personal-info {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  > li {
+    padding: 5px 0;
+    .info-title {
+      color: #f3f3f3;
+      display: inline-block;
+      font-family: 'Oxygen', Helvetica, sans-serif;
+      font-weight: 700;
+      margin-right: 12px;
+      border-bottom: 2px solid #00FF96;
+    }
+    .info-data {
+      font-family: 'PT Sans', Helvetica, sans-serif;
+      min-width: 250px;
+      color: #eee;
+    }
+  }
+}
+
+.my-photo-block {
+  position: relative;
+}

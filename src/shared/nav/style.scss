@@ -27,16 +27,6 @@
   }
   .nav-list-container {
     height: calc(100% - 4em);
-    padding: 25px 0 30px;
-  }
-  .scrollarea .scrollbar-container {
-    opacity: 0;
-    &.vertical {
-      width: 15px;
-    }
-  }
-  .scrollarea .scrollbar-container:hover {
-    background: transparent;
   }
 
   .nav-head {
