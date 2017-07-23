@@ -3,7 +3,9 @@ import ScrollArea from 'react-scrollbar';
 
 import './style.scss';
 
-import MyPhoto from '../../images/my_photo.png'
+import MyPhoto from '../../images/my_photo.png';
+
+import GitHubIcon from 'react-icons/lib/ti/social-github';
 
 const ScrollContainer = {
   maxHeight: 'calc(100vh - 4em)'
@@ -55,6 +57,9 @@ export default () => (
                   <span className="info-title">Freelance</span>
                   <span className="info-data">Available</span>
                 </li>
+              </ul>
+              <ul className="social-buttons">
+                <li><GitHubIcon size="32"/></li>
               </ul>
             </div>
           </div>
