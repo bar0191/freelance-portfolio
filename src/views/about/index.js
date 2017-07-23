@@ -25,7 +25,7 @@ export default () => (
           <div className="row">
             <div className="col-sm-6 col-md-6 col-lg-4">
               <div className="my-photo-block">
-                <img src={MyPhoto}/>
+                <img className="img-responsive" src={MyPhoto}/>
               </div>
             </div>
             <div className="col-sm-6 col-md-6 col-lg-4">
