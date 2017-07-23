@@ -72,6 +72,29 @@
           top: 10px;
           z-index: 0;
         }
+        .block-title {
+          > h3 {
+            display: inline-block;
+            position: relative;
+            margin: 0 0 20px;
+            padding: 0;
+            font-family: 'Oxygen', Helvetica, sans-serif;
+            font-weight: 700;
+            line-height: 1.5em;
+            font-size: 1.40em;
+            color: #f3f3f3;
+            &:after {
+              content: '';
+              display: block;
+              position: absolute;
+              width: 2px;
+              height: 100%;
+              left: -10px;
+              bottom: 0;
+              background-color: #00FF96;
+            }
+          }
+        }
         .card-title-section {
           position: relative;
           margin-bottom: 40px;
@@ -121,6 +144,14 @@
   background: transparent;
 }
 
+.scroll-container {
+  max-height: calc(100vh - 4em);
+}
+
+.pad-col {
+  margin-bottom: 40px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -148,4 +179,13 @@ h3 {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 1.17em;
+}
+
+h4 {
+  color: #f3f3f3;
+  ont-family: Oxygen, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
