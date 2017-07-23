@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Typist from 'react-typist';
 import './style.scss';
 
 const headerStyle = {
@@ -9,7 +9,8 @@ const headerStyle = {
 
 const paraStyle = {
   margin: '10px',
-  color: '#333'
+  color: '#333',
+  fontSize: '3vmin'
 };
 
 export default () => (
@@ -18,8 +19,11 @@ export default () => (
     <div className="sub-page">
       <section className="table">
         <div>
-          <h1 style={headerStyle}>Brandon Reid</h1>
-          <p style={paraStyle}>Junior Full Stack Developer</p>
+          <Typist startDelay={1500} avgTypingSpeed={70} >
+            <span className="home-title">Brandon Reid</span>
+            <br/>
+            <span style={paraStyle}>Junior Full Stack Developer</span>
+          </Typist>
         </div>
       </section>
     </div>
