@@ -1,5 +1,8 @@
 import React from 'react';
 import ScrollArea from 'react-scrollbar';
+import Masonry from 'react-masonry-component';
+
+import Mason from '../components/masonry';
 
 export default () => (
   <div className="page-container">
@@ -13,6 +16,9 @@ export default () => (
               <h1 className="title">Portfolio</h1>
               <h5 className="subtitle-section">The Beginning of Great Work</h5>
             </div>
+          </div>
+          <div className="row">
+            <Mason/>
           </div>
         </div>
         </ScrollArea>
