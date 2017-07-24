@@ -14,6 +14,12 @@ export default () => (
               <h5 className="subtitle-section">Lets Get to Work!</h5>
             </div>
           </div>
+          <div className="row">
+            <div className="col-sm-6 col-md-6 pad-col">
+              <div className="block-title"><h3>Get in Touch</h3></div>
+              <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget tincidunt tortor tempus.</p>
+            </div>
+          </div>
         </div>
         </ScrollArea>
       </section>

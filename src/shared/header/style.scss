@@ -4,6 +4,7 @@
   height: 50px;
   width: 100%;
   background-color: $site-dark;
+  border-bottom: 2px solid;
   @media(min-width: 992px) {
     display: none;
   }
@@ -20,11 +21,9 @@
 }
 
 .menu-icon {
-  display: block;
-  text-align: center;
   cursor: pointer;
   overflow: hidden;
   float: right;
-  padding: 6px;
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-top: 6px;
 }

@@ -37,6 +37,10 @@
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
+  @media(max-width: 992px) {
+    padding: 0;
+    height: 100vh;
+  }
   .sub-page {
     position: relative;
     width: 100%;
