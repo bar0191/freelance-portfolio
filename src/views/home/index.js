@@ -19,7 +19,7 @@ export default () => (
     <div className="sub-page">
       <section className="table">
         <div>
-          <Typist startDelay={1500} avgTypingSpeed={70} >
+          <Typist startDelay={1000} avgTypingSpeed={70} >
             <span className="home-title">Brandon Reid</span>
             <br/>
             <span style={paraStyle}>Junior Full Stack Developer</span>

@@ -17,6 +17,13 @@ export default () => (
             </div>
           </div>
           <div className="row">
+            <div className="col-sm-12 col-md-12 col-lg-12">
+              <div className="download-button">
+                <a href="https://drive.google.com/file/d/0B1uaZFI6UYNVVE4tWlUtTjdnU1U/view" className="button">
+                  Download
+                </a>
+              </div>
+            </div>
             <div className="col-sm-6 col-md-6 col-lg-6">
               <div className="block-title">
                 <h3>Education</h3>
@@ -53,14 +60,6 @@ export default () => (
                 <h3>Experience</h3>
               </div>
               <div className="timeline">
-                {/*<div className="timeline-item">
-                  <h4 className="timeline-item-title">Freelance Developer</h4>
-                  <span className="timeline-item-period">Jan 2017 - Current</span>
-                  <span className="timeline-item-name">Contractor</span>
-                  <p className="timeline-item-desc">
-                    Actively seeking full stack and web development opportunities
-                  </p>
-                </div>*/}
                 <div className="timeline-item">
                   <h4 className="timeline-item-title">Drupal Developer Intern</h4>
                   <span className="timeline-item-period">June 2017 - Aug 2017</span>
@@ -90,13 +89,6 @@ export default () => (
                     </ul>
                   </p>
                 </div>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-12">
-              <div className="download-button">
-                <a href="https://drive.google.com/file/d/0B1uaZFI6UYNVVE4tWlUtTjdnU1U/view" className="button">
-                  Get Resume
-                </a>
               </div>
             </div>
           </div>
