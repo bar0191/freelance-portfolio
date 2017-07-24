@@ -114,6 +114,15 @@
               font-size: 60px;
               line-height: 1.1em;
               z-index: 1;
+              &-project {
+                display: inline-block;
+                margin: 0;
+                padding-top: 10px;
+                text-align: center;
+                color: #f3f3f3;
+                font-size: 2.5em;
+
+              }
             }
             .subtitle-section {
               display: inline-block;
@@ -150,6 +159,61 @@
 
 .pad-col {
   margin-bottom: 40px;
+  &-project {
+    margin-bottom: 30px;
+    .project-info {
+      list-style: none;
+      padding: 0px;
+      margin: 0px 0px 15px;
+      > li {
+        margin: 0px 0px 10px;
+        .icon {
+          color: #00FF96;
+          margin-right: 7px;
+        }
+      }
+    }
+    .tags-section {
+      margin: 25px 0px 0px;
+      .tags {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        > li {
+          display: inline-block;
+          margin: 3px 3px;
+          > a {
+            font-size: 13px;
+            color: rgb(85, 85, 85);
+            background-color: rgb(255, 255, 255);
+            padding: 2px 7px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(229, 229, 229);
+            border-image: initial;
+            text-decoration: none;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-exit {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  > a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-top: 13px;
+    margin-right: 20px;
+    color: #00FF96;
+  }
 }
 
 body {
@@ -164,7 +228,7 @@ h2 {
   font-size: 3.0vh;
 }
 p {
-  font-size: 0.9em;
+  font-size: 1em;
   margin: 0 0 10px;
   font-weight: 400;
   color: #f3f3f3;
@@ -183,7 +247,7 @@ h3 {
 
 h4 {
   color: #f3f3f3;
-  ont-family: Oxygen, Helvetica, sans-serif;
+  font-family: Oxygen, Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.5em;
   margin-top: 0px;
