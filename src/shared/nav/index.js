@@ -12,7 +12,7 @@ import MyPic from '../../images/my_photo.png';
 
 import './style.scss';
 
-const NavHead = (props) => (
+const NavHead = () => (
   <header className="nav-head">
     <div className="my-photo">
       <img src={MyPic} width="75px" height="75px" alt="image" />
@@ -25,9 +25,10 @@ class NavList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: 0
+      selected: 0,
     }
   }
+
   handleClick = (index, e) => {
     let c = e.currentTarget.className;
     e.preventDefault();
@@ -43,7 +44,6 @@ class NavList extends React.Component {
     })
   };
 
-
   render() {
     const NavStyle = {
       padding: '25px 0 30px'
@@ -51,11 +51,11 @@ class NavList extends React.Component {
     return (
       <div style={NavStyle}>
         <ul className="nav-list">
-          <li><Link to="/"><IconHome className="icon"/><br/>Home</Link></li>
-          <li><Link to="/about"><IconUser className="icon"/><br/>About Me</Link></li>
-          <li><Link to="/resume"><IconCard className="icon"/><br/>Resume</Link></li>
-          <li><Link to="/portfolio"><IconCase className="icon"/><br/>Portfolio</Link></li>
-          <li><Link to="/contact"><IconMail className="icon"/><br/>Contact</Link></li>
+          <li onClick={this.props.hideNav}><IndexLink activeClassName="active" to="/"><IconHome className="icon"/><br/>Home</IndexLink></li>
+          <li onClick={this.props.hideNav}><Link activeClassName="active" to="/about"><IconUser className="icon"/><br/>About Me</Link></li>
+          <li onClick={this.props.hideNav}><Link activeClassName="active" to="/resume"><IconCard className="icon"/><br/>Resume</Link></li>
+          <li onClick={this.props.hideNav}><Link activeClassName="active" to="/portfolio"><IconCase className="icon"/><br/>Portfolio</Link></li>
+          <li onClick={this.props.hideNav}><Link activeClassName="active" to="/contact"><IconMail className="icon"/><br/>Contact</Link></li>
         </ul>
       </div>
     )
@@ -66,7 +66,7 @@ class NavList extends React.Component {
 export default (props) => (
   <nav className={`site-nav ${props.mini ? 'mini' : ''}`} role="navigation">
     <ScrollArea className="nav-list-container" horizontal={false} verticalScrollbarStyle={{width: '4px', marginLeft: '10px'}}>
-    <NavHead {...props}/>
+    <NavHead/>
     <NavList {...props}/>
     </ScrollArea>
   </nav>

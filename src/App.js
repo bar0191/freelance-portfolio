@@ -17,11 +17,13 @@ export default class App extends Component {
 
   toggleNav = (e) => {
     e.preventDefault();
+    console.log('nav-toggled');
     this.setState({navMini: !this.state.navMini});
   };
   hideNav = (e) => {
     e.stopPropagation();
     e.preventDefault();
+    console.log('nav-toggled');
     this.setState({navMini: false})
   };
   render() {
@@ -37,12 +39,13 @@ export default class App extends Component {
 
     return (
       <div className="app-wrapper">
-        <Nav mini={navMini} />
+        <Nav mini={navMini} hideNav={this.hideNav}/>
         <div className="content-container">
           <Particles
             height="100vh" width="100vw" style={partStyle}
             params={particleConfig}
           />
+          <div className="menu-dropshadow" style={{display: (navMini ? 'block': 'none')}} onClick={this.hideNav}/>
           <SiteHead toggleNav={this.toggleNav}/>
           {this.props.children}
         </div>
