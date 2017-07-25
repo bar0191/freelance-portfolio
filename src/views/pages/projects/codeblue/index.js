@@ -49,7 +49,7 @@ export default () => (
                   <li><p><GlobeIcon className="icon"/><a href="http://portal.cprlifeguard.com/">portal.cprlifeguard.com</a></p></li>
                   <li><p><CalIcon className="icon"/>May 2017</p></li>
                 </ul>
-                <p className="text-justify">Aliquam euismod aliquam massa, quis eleifend dui sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <p className="text-justify">A project done in conjunction with Dr. Dantu at the University of North Texas and Texas Presbyterian Hospital. Essentially, this web application provided an admin interface to doctors and researchers for monitoring CPR quality. This web application was connected to a database that was pulling session data from live CPR instances. The goal of the project as a whole, was to bring better CPR quality to health professionals overall.</p>
                 <div className="tags-section">
                   <div className="block-title"><h3>Technology</h3></div>
                   <ul className="tags">

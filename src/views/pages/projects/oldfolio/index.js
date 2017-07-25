@@ -49,7 +49,7 @@ export default () => (
                   <li><p><GlobeIcon className="icon"/><a href="http://portal.cprlifeguard.com/">portal.cprlifeguard.com</a></p></li>
                   <li><p><CalIcon className="icon"/>Spring 2017</p></li>
                 </ul>
-                <p className="text-justify">Aliquam euismod aliquam massa, quis eleifend dui sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <p className="text-justify">This project was my first portfolio site, along with my first production ReactJS site. This project uses purely reactJS and Bootstrap, hosted on github pages.</p>
                 <div className="tags-section">
                   <div className="block-title"><h3>Technology</h3></div>
                   <ul className="tags">

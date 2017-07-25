@@ -155,7 +155,8 @@ export default () => (
           <div className="row">
             <div className="col-sm-6 col-md-6 pad-col">
               <div className="block-title"><h3>Get in Touch</h3></div>
-              <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget tincidunt tortor tempus.</p>
+              <p>Thanks for considering my services!</p>
+              <p>As a full time student, freelancing is something I do for fun and as a passion. To get my reputation building, I am offering my services at an extremely low rate. Lets get in touch to discuss more!</p>
               <div className="contact-info">
                 <div className="contact-info-icon">
                   <LocationIcon size="35"/>

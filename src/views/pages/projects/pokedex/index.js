@@ -54,11 +54,17 @@ export default () => (
                   <li><p><GlobeIcon className="icon"/><a href="http://dev-pokedeck.pantheonsite.io/">dev-pokedeck.pantheonsite.io</a></p></li>
                   <li><p><CalIcon className="icon"/>Summer 2017</p></li>
                 </ul>
-                <p className="text-justify">Aliquam euismod aliquam massa, quis eleifend dui sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <p className="text-justify">This project was done in conjuction with Level Ten Interactive during an Internship program. The interns and I were required to build a complex Drupal site. The requirements included advanced drupal development methods, such as module and theme development. I created a script for this project that would migrate 250+ pokemon into a drupal database. The style of the site was built using drupals site building components, and the bootstrap 3 framework.</p>
                 <div className="tags-section">
                   <div className="block-title"><h3>Technology</h3></div>
                   <ul className="tags">
                     <li><a>Drupal</a></li>
+                    <li><a>PHP</a></li>
+                    <li><a>MySQL</a></li>
+                    <li><a>Pantheon</a></li>
+                    <li><a>HTML</a></li>
+                    <li><a>CSS</a></li>
+                    <li><a>Bootstrap</a></li>
                   </ul>
                 </div>
               </div>

@@ -45,7 +45,7 @@ export default () => (
                   <li><p><GlobeIcon className="icon"/><a href="http://latherbynature.com/">latherbynature.com</a></p></li>
                   <li><p><CalIcon className="icon"/>Spring 2017</p></li>
                 </ul>
-                <p className="text-justify">Aliquam euismod aliquam massa, quis eleifend dui sodales vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <p className="text-justify">This was my first freelancing project for a client who sold body essentials such as soap. This site was powered by Wordpress and Woocommerce. This site was also done in conjunction with a school project. The site is currently down for maintenance due to plugins no longer being supported by the theme provider. I am re-working a new commerce site in react.</p>
                 <div className="tags-section">
                   <div className="block-title"><h3>Technology</h3></div>
                   <ul className="tags">

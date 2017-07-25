@@ -77,7 +77,7 @@ export default () => (
                 <div className="timeline-item">
                   <h4 className="timeline-item-title">Research Assistant</h4>
                   <span className="timeline-item-period">Jan 2017 - June 2017</span>
-                  <span className="timeline-item-name">Basics</span>
+                  <span className="timeline-item-name">University of North Texas</span>
                   <p className="timeline-item-desc">
                     <ul>
                       <li>Technology - Android, Git, Node.js, React.js, Couchbase, DigitalOcean</li>
