@@ -83,27 +83,27 @@ export default () => (
               <div style={serviceStyle}>
                 <img src={CloudImg} style={serviceImgStyle}/>
                 <h4>Cloud Hosting</h4>
-                <p>Need cloud integration or hosting? I've worked with some of the best cloud hosting platforms, such as Digital Ocean and Pantheon.</p>
+                <p>I've worked with some of the best cloud hosting platforms, such as Digital Ocean and Pantheon.</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
                 <img src={PhoneImg} style={serviceImgStyle}/>
                 <h4>Mobile Design</h4>
-                <p>Now that 60% of web traffic is mobile, it is important to design and build sites with mobile in mind first</p>
+                <p>Now that 60% of web traffic is mobile, it is crucial to design with mobile in mind first.</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
                 <img src={WhiteHatImg} style={serviceImgStyle}/>
                 <h4>Security Conscious</h4>
-                <p>With my educational background came a concentration in Cyber Security, and I will provide a security conscious service to my clients.</p>
+                <p>With my educational background came a concentration in Cyber Security, and I provide a security conscious service to my clients.</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
                 <img src={CodeImg} style={serviceImgStyle}/>
-                <h4>Cutting-Edge Web Apps</h4>
+                <h4>Web Apps</h4>
                 <p>Working with cutting-edge and trending web application frameworks such as ReactJS, NodeJS, Express and NoSQL. </p>
               </div>
             </div>
