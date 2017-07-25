@@ -7,6 +7,9 @@ import './style.scss';
 import UserIcon from 'react-icons/lib/ti/user-outline';
 import MailIcon from 'react-icons/lib/ti/mail';
 import MessageIcon from 'react-icons/lib/ti/message-typing';
+import LocationIcon from 'react-icons/lib/ti/location-outline';
+import PhoneIcon from 'react-icons/lib/ti/phone-outline';
+import CheckIcon from 'react-icons/lib/ti/input-checked-outline';
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -153,6 +156,38 @@ export default () => (
             <div className="col-sm-6 col-md-6 pad-col">
               <div className="block-title"><h3>Get in Touch</h3></div>
               <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget tincidunt tortor tempus.</p>
+              <div className="contact-info">
+                <div className="contact-info-icon">
+                  <LocationIcon size="35"/>
+                </div>
+                <div className="contact-info-text">
+                  <h5>Dallas, Texas</h5>
+                </div>
+              </div>
+              <div className="contact-info">
+                <div className="contact-info-icon">
+                  <MailIcon size="35"/>
+                </div>
+                <div className="contact-info-text">
+                  <h5>brandonreid2@my.unt.edu</h5>
+                </div>
+              </div>
+              <div className="contact-info">
+                <div className="contact-info-icon">
+                  <PhoneIcon size="35"/>
+                </div>
+                <div className="contact-info-text">
+                  <h5>(469) 628-2005</h5>
+                </div>
+              </div>
+              <div className="contact-info">
+                <div className="contact-info-icon">
+                  <CheckIcon size="35"/>
+                </div>
+                <div className="contact-info-text">
+                  <h5>Freelance Available</h5>
+                </div>
+              </div>
             </div>
             <div className="col-sm-6 col-md-6 pad-col">
               <div className="block-title"><h3>Contact Form</h3></div>

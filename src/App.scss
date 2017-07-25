@@ -165,7 +165,7 @@
 }
 
 .scroll-container {
-  max-height: calc(100vh - 4em);
+  height: calc(100vh - 4em);
 }
 
 .pad-col {
@@ -271,6 +271,15 @@ h4 {
   font-weight: 700;
   line-height: 1.5em;
   margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  color: #f3f3f3;
+  font-family: 'Oxygen', Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
