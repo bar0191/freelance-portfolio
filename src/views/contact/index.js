@@ -1,5 +1,12 @@
 import React from 'react';
 import ScrollArea from 'react-scrollbar';
+import AlertContainer from 'react-alert';
+
+import './style.scss';
+
+import UserIcon from 'react-icons/lib/ti/user-outline';
+import MailIcon from 'react-icons/lib/ti/mail';
+import MessageIcon from 'react-icons/lib/ti/message-typing';
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -8,7 +15,30 @@ class ContactForm extends React.Component {
       author: '',
       text: '',
       email: ''
-    }
+    };
+    this.baseState = this.state
+  }
+
+  alertOptions = {
+    offset: 14,
+    position: 'top right',
+    theme: 'dark',
+    time: 10000,
+    transition: 'scale'
+  };
+
+  showSubmitAlert = () => {
+    this.msg.show('Message submitted successfully!', {
+      time: 5000,
+      type: 'success'
+    })
+  }
+
+  showErrorAlert = () => {
+    this.msg.show('ERROR: Something happened... try again!', {
+      time: 5000,
+      type: 'error'
+    })
   }
 
   handleAuthorChange = (e) => {
@@ -21,6 +51,10 @@ class ContactForm extends React.Component {
 
   handleTextChange = (e)  => {
     this.setState({text: e.target.value});
+  };
+
+  resetForm = () => {
+    this.setState(this.baseState)
   };
 
   handleSubmit = (e)  => {
@@ -38,40 +72,65 @@ class ContactForm extends React.Component {
         text: this.state.text
       })
     })
-      .then((response) => response.json())
-      .then((responseJson) => {
-        if (responseJson.success) {
-          this.setState({formSent: true})
-        }
-        else this.setState({formSent: false})
-      })
+      .then(this.showSubmitAlert())
+      //.then((response) => response.json())
+      // .then((responseJson) => {
+      //   if (responseJson.success) {
+      //     this.setState({ formSent: true });
+      //   }
+      //   else {
+      //     this.setState({ formSent: false });
+      //   }
+      // })
       .catch((error) => {
         console.error(error);
       });
   };
 
   render() {
+    const bodyStyle = {
+      height: '200px'
+    };
+
     return (
       <form onSubmit={this.handleSubmit} >
-        <input
-          type="text"
-          placeholder="Your name"
-          value={this.state.author}
-          onChange={this.handleAuthorChange}
-        />
-        <input
-          type="text"
-          placeholder="Your email"
-          value={this.state.email}
-          onChange={this.handleEmailChange}
-        />
-        <input
-          type="text"
-          placeholder="Say something..."
-          value={this.state.text}
-          onChange={this.handleTextChange}
-        />
-        <input type="submit" value="Send Email" />
+        <AlertContainer ref={a => this.msg = a} {...this.alertOptions} />
+        <div className="input-field">
+          <input
+            type="text"
+            placeholder="Full Name"
+            value={this.state.author}
+            onChange={this.handleAuthorChange}
+            className="form-control"
+            required="required"
+          />
+          <UserIcon className="input-field-icon"/>
+        </div>
+        <div className="input-field">
+          <input
+            type="text"
+            placeholder="Email Address"
+            value={this.state.email}
+            onChange={this.handleEmailChange}
+            className="form-control"
+            required="required"
+          />
+          <MailIcon className="input-field-icon"/>
+        </div>
+        <div className="input-field">
+          <textarea
+            type="text"
+            placeholder="Message for me..."
+            value={this.state.text}
+            onChange={this.handleTextChange}
+            className="form-control"
+            rows="4"
+            required="required"
+            style={bodyStyle}
+          />
+          <MessageIcon className="input-field-icon"/>
+        </div>
+        <input type="submit" value="Send Email" className="send-button"/>
       </form>
     )
   }

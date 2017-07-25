@@ -1,0 +1,79 @@
+.input-field {
+  position: relative;
+  margin: 0 0 20px;
+  &-icon {
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    font-size: 24px;
+    color: #aaa;
+  }
+  .form-control {
+    height: 42px;
+    position: relative;
+    border: 1px solid #555;
+    border-radius: 0;
+    display: block;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 10px 35px 10px 12px;
+    width: 100%;
+    background: 0 0;
+    text-align: left;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    color: #eee;
+    &:active {
+      .input-field-icon {
+        color: #00FF96;
+      }
+    }
+  }
+}
+
+.send-button {
+  color: #eee;
+  display: inline-block;
+  position: relative;
+  padding: 0.8em 2em;
+  margin-bottom: .25em;
+  font-size: 0.875em;
+  line-height: 1.2;
+  outline: 0;
+  border: 2px solid darken(#00FF96, 15%);
+  text-shadow: none;
+  background: none;
+  border-radius: 0;
+  font-family: 'PT Sans', Helvetica, sans-serif;
+  &:hover {
+    background-color: darken(#00FF96, 15%);
+  }
+}
+
+input:required:focus {
+  border-bottom: 2px solid #00FF96;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  .input-field-icon {
+    color: #00FF96;
+  }
+}
+
+textarea:required:focus {
+  border-bottom: 2px solid #00FF96;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  outline: none;
+  .input-field-icon {
+    color: #00FF96;
+  }
+}
