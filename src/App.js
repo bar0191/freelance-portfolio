@@ -13,14 +13,12 @@ export default class App extends Component {
 
   toggleNav = (e) => {
     e.preventDefault();
-    console.log('nav-toggled');
     this.setState({navMini: !this.state.navMini});
   };
 
   hideNav = (e) => {
     e.stopPropagation();
     e.preventDefault();
-    console.log('nav-toggled');
     this.setState({navMini: false})
   };
   render() {
