@@ -3,8 +3,36 @@ import ScrollArea from 'react-scrollbar';
 
 import './style.scss';
 
+import CouchPic from '../../images/couchbase.png';
+import SassPic from '../../images/sass.svg';
+import ReactPic from '../../images/react.png';
+import DrupalPic from '../../images/drupal.png';
+import CssPic from '../../images/Css3.png';
+import HtmlPic from '../../images/HTML5_Badge.png';
+import DoPic from '../../images/Digitalocean.png';
+import ExpressPic from '../../images/expressjs.png';
+import GitPic from '../../images/Git-Icon.png';
+import NodePic from '../../images/nodejs_logo.png';
+import WordPressPic from '../../images/wordpress.png';
+import JsPic from '../../images/logo_javascript.png';
+import BootStrapPic from '../../images/logo-bootstrap-4.png';
+import CPlusPic from '../../images/c-logo.png';
+import BashPic from '../../images/App-Terminal.png';
+import AndroidPic from '../../images/android.png';
+
+
 const colStyle = {
   marginTop: '25px'
+};
+
+const serviceStyle = {
+  textAlign: 'center'
+};
+
+const serviceImgStyle = {
+  maxWidth: '100px',
+  maxHeight: '75px',
+  margin: '0px 0px 10px'
 };
 
 export default () => (
@@ -93,6 +121,124 @@ export default () => (
                     </ul>
                   </span>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="block-title">
+            <h3>Skills</h3>
+          </div>
+          <div className="row">
+            <div className="col-sm-6 col-md-3 pad-col">
+              <div style={serviceStyle}>
+                <img src={CouchPic} style={serviceImgStyle}/>
+                <h4>Modern Back End Development</h4>
+                <p>I have experience with modern NoSQL Databases such as MongoDB and Couchbase, as well as SQL databases such as MySQL and MariaDB.</p>
+              </div>
+            </div>
+            <div className="col-sm-6 col-md-3 pad-col">
+              <div style={serviceStyle}>
+                <img src={ReactPic} style={serviceImgStyle}/>
+                <h4>React Framework</h4>
+                <p>My specialization is in the React Framework, ES6 Javascript, and NodeJS. Using expressJS for most of the backend work. After working with react for over a year now, it is safe to say I have grown a passion for using it.</p>
+              </div>
+            </div>
+            <div className="col-sm-6 col-md-3 pad-col">
+              <div style={serviceStyle}>
+                <img src={DrupalPic} style={serviceImgStyle}/>
+                <h4>CMS</h4>
+                <p>For more content and SEO focused sites I use Drupal to quickly and efficiently bring a project to life. I have extensive training and experience with Drupal, building custom modules and themes to cater a client needs. </p>
+              </div>
+            </div>
+            <div className="col-sm-6 col-md-3 pad-col">
+              <div style={serviceStyle}>
+                <img src={SassPic} style={serviceImgStyle}/>
+                <h4>Modern Front End Development</h4>
+                <p>Utilising SASS, Bootstrap, grunt, bower etc is part of my standard workflow, and I'm happy working within a GIT, SVN environment.</p>
+              </div>
+            </div>
+          </div>
+          <div className="block-title">
+            <h3>Technology Summary</h3>
+          </div>
+          <div className="row">
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={ExpressPic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={AndroidPic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={CouchPic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={ReactPic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={DrupalPic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={SassPic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={GitPic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={CPlusPic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={JsPic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={HtmlPic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={CssPic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={BootStrapPic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={NodePic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={WordPressPic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={BashPic} style={serviceImgStyle}/>
+              </div>
+            </div>
+            <div className="col-sm-3 col-md-3 col-xs-4 col-lg-2 pad-col">
+              <div style={serviceStyle}>
+                <img src={DoPic} style={serviceImgStyle}/>
               </div>
             </div>
           </div>
