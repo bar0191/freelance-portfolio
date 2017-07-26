@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import Nav from './shared/nav';
 import SiteHead from './shared/header';
-import Particles from 'react-particles-js';
-import { particleConfig } from './particlejs-config.js';
+// import Particles from 'react-particles-js';
+// import { particleConfig } from './particlejs-config.js';
 import './App.scss';
 
 export default class App extends Component {
@@ -24,22 +24,22 @@ export default class App extends Component {
   render() {
     let navMini = this.state.navMini;
 
-    let partStyle = {
-      display: 'block',
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      zIndex: '-9999'
-    };
+    // let partStyle = {
+    //   display: 'block',
+    //   position: 'fixed',
+    //   top: 0,
+    //   left: 0,
+    //   zIndex: '-9999'
+    // };
 
     return (
       <div className="app-wrapper">
         <Nav mini={navMini} hideNav={this.hideNav}/>
         <div className="content-container">
-          <Particles
+          {/*<Particles
             height="100vh" width="100vw" style={partStyle}
             params={particleConfig}
-          />
+          />*/}
           <div className="menu-dropshadow" style={{display: (navMini ? 'block': 'none')}} onClick={this.hideNav}/>
           <SiteHead toggleNav={this.toggleNav}/>
           {this.props.children}
