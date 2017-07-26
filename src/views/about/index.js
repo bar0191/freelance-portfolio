@@ -48,10 +48,6 @@ export default () => (
             <div className="col-sm-6 col-md-6 col-lg-4 pad-col">
               <ul className="personal-info">
                 <li>
-                  <span className="info-title">Age</span>
-                  <span className="info-data">23</span>
-                </li>
-                <li>
                   <span className="info-title">Residence</span>
                   <span className="info-data">Dallas, Texas</span>
                 </li>
