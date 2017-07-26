@@ -63,6 +63,7 @@
     &-desc {
       margin: 0 0 10px;
       font-weight: 400;
+      color: #f3f3f3;
       > ul {
         padding-left: 20px;
         > li {
@@ -74,8 +75,8 @@
 }
 
 .download-button {
-  //margin-top: 50px;
   text-align: center;
+  margin-top: 30px;
   margin-bottom: 30px;
   > a.button {
     display: inline-block;

@@ -3,6 +3,10 @@ import ScrollArea from 'react-scrollbar';
 
 import './style.scss';
 
+const colStyle = {
+  marginTop: '25px'
+};
+
 export default () => (
   <div className="page-container">
     <div className="sub-page">
@@ -24,7 +28,7 @@ export default () => (
                 </a>
               </div>
             </div>
-            <div className="col-sm-6 col-md-6 col-lg-6">
+            <div className="col-sm-6 col-md-6 col-lg-6" style={colStyle}>
               <div className="block-title">
                 <h3>Education</h3>
               </div>
@@ -33,29 +37,29 @@ export default () => (
                   <h4 className="timeline-item-title">University of North Texas</h4>
                   <span className="timeline-item-period">2014 - Current</span>
                   <span className="timeline-item-name">Information Technology - BA</span>
-                  <p className="timeline-item-desc">
+                  <span className="timeline-item-desc">
                     <ul>
                       <li>Federal Security certificate administered by the NSA</li>
                       <li>Member of Cyber Security Association - 2 years</li>
                       <li>Undergraduate research assistant with Computer Science Dept.</li>
                       <li>President's List both Spring and Fall Semesters in 2017</li>
                     </ul>
-                  </p>
+                  </span>
                 </div>
                 <div className="timeline-item">
                   <h4 className="timeline-item-title">North Central Texas College</h4>
                   <span className="timeline-item-period">2012 - 2014</span>
                   <span className="timeline-item-name">Basics</span>
-                  <p className="timeline-item-desc">
+                  <span className="timeline-item-desc">
                     <ul>
                       <li>Dean's list Spring/Fall 2013</li>
                       <li>Intro to Java Programming done here</li>
                     </ul>
-                  </p>
+                  </span>
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-md-6 col-lg-6">
+            <div className="col-sm-6 col-md-6 col-lg-6" style={colStyle}>
               <div className="block-title">
                 <h3>Experience</h3>
               </div>
@@ -64,7 +68,7 @@ export default () => (
                   <h4 className="timeline-item-title">Drupal Developer Intern</h4>
                   <span className="timeline-item-period">June 2017 - Aug 2017</span>
                   <span className="timeline-item-name">LevelTen Interactive</span>
-                  <p className="timeline-item-desc">
+                  <span className="timeline-item-desc">
                     <ul>
                       <li>PHP/Apache/MySQL</li>
                       <li>Module management, development, and debugging</li>
@@ -72,13 +76,13 @@ export default () => (
                       <li>Managed issue queues, and preformed bug fixes</li>
                       <li>Created style guides, and re-styled/themed sites</li>
                     </ul>
-                  </p>
+                  </span>
                 </div>
                 <div className="timeline-item">
                   <h4 className="timeline-item-title">Research Assistant</h4>
                   <span className="timeline-item-period">Jan 2017 - June 2017</span>
                   <span className="timeline-item-name">University of North Texas</span>
-                  <p className="timeline-item-desc">
+                  <span className="timeline-item-desc">
                     <ul>
                       <li>Technology - Android, Git, Node.js, React.js, Couchbase, DigitalOcean</li>
                       <li>Practices - Waterfall methods, but have been transitioning to more agile methods</li>
@@ -87,7 +91,7 @@ export default () => (
                       <li>Obtained the skills necessary to work in a team oriented environment, at a fast pace</li>
                       <li>Worked independently, and under minimal supervision</li>
                     </ul>
-                  </p>
+                  </span>
                 </div>
               </div>
             </div>

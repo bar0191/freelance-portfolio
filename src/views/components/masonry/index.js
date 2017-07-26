@@ -26,9 +26,39 @@ const Gallery = React.createClass({
         className={'my-gallery-class mason'}
       >
         {/*<Link to="/projects/latherbynature"><img style={imgStyle} src={LatherBy}/></Link>*/}
-        <Link to="/projects/old-portfolio"><img style={imgStyle} src={OldPort}/></Link>
-        <Link to="/projects/codeblue"><img style={imgStyle} src={CodeBlue}/></Link>
-        <Link to="/projects/pokedex"><img style={imgStyle} src={Pokedex}/></Link>
+        <article className="project">
+        <Link to="/projects/old-portfolio">
+          <img src={OldPort}/>
+          <span className="meta">
+            <span className="meta-inner">
+              <h1>First React Site</h1>
+              <p>My old portfolio site</p>
+            </span>
+          </span>
+        </Link>
+        </article>
+        <article className="project">
+          <Link to="/projects/codeblue">
+            <img src={CodeBlue}/>
+            <span className="meta">
+            <span className="meta-inner">
+              <h1>Presbyterian Hospital</h1>
+              <p>Admin Panel</p>
+            </span>
+          </span>
+          </Link>
+        </article>
+        <article className="project">
+          <Link to="/projects/pokedex">
+            <img src={Pokedex}/>
+            <span className="meta">
+            <span className="meta-inner">
+              <h1>Level Ten Interactive</h1>
+              <p>Advanced Drupal Site</p>
+            </span>
+          </span>
+          </Link>
+        </article>
       </Masonry>
     );
   }
