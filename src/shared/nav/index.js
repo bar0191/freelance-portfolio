@@ -15,7 +15,7 @@ import './style.scss';
 const NavHead = () => (
   <header className="nav-head">
     <div className="my-photo">
-      <img src={MyPic} width="75px" height="75px" alt="image" />
+      <img src={MyPic} width="75px" height="75px" role="presentation" />
     </div>
     <strong className="h1 nav-list-title">Brandon Reid</strong>
   </header>
@@ -29,14 +29,14 @@ class NavList extends React.Component {
     }
   }
 
-  handleClick = (index, e) => {
+  /*handleClick = (index, e) => {
     let c = e.currentTarget.className;
     e.preventDefault();
     e.stopPropagation();
     this.setState({
       selected: (c.indexOf('selected') >= 0) ? '' : index
     })
-  };
+  };*/
 
   render() {
     const NavStyle = {

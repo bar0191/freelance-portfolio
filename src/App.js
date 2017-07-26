@@ -1,12 +1,8 @@
 import React, {Component} from 'react';
 import Nav from './shared/nav';
 import SiteHead from './shared/header';
-import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router';
-
 import Particles from 'react-particles-js';
 import { particleConfig } from './particlejs-config.js';
-
-//styles
 import './App.scss';
 
 export default class App extends Component {
@@ -20,6 +16,7 @@ export default class App extends Component {
     console.log('nav-toggled');
     this.setState({navMini: !this.state.navMini});
   };
+
   hideNav = (e) => {
     e.stopPropagation();
     e.preventDefault();

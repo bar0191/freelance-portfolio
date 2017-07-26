@@ -1,3 +1,6 @@
+@import '../../shared/variables';
+
+
 .timeline {
   border-left: 2px solid #676767;
   padding: 15px 0;
@@ -5,10 +8,10 @@
     position: relative;
     margin-left: 20px;
     margin-bottom: 20px;
-    background-color: lighten(#222, 1%);
+    background-color: lighten($site-dark, 1%);
     box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px 0;
     padding: 15px 20px 10px;
-    border-left: 2px solid #00FF96;
+    border-left: 2px solid $site-green;
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.2) 0 0 35px 0;
     }
@@ -16,20 +19,20 @@
       content: '';
       display: inline-block;
       position: absolute;
-      background-color: #222;
+      background-color: $site-dark;
       border-radius: 10px;
       width: 12px;
       height: 12px;
       top: 20px;
       left: -29px;
-      border: 2px solid #00FF96;
+      border: 2px solid $site-green;
       z-index: 2;
     }
     &:after {
       content: '';
       display: inline-block;
       position: absolute;
-      background-color: #00FF96;
+      background-color: $site-green;
       border-radius: 10px;
       width: 29px;
       height: 2px;
@@ -47,7 +50,7 @@
       display: inline-block;
       font-size: 12px;
       line-height: 1.2em;
-      color: #00FF96;
+      color: $site-green;
       margin-bottom: 8px;
     }
     &-name {
@@ -63,7 +66,7 @@
     &-desc {
       margin: 0 0 10px;
       font-weight: 400;
-      color: #f3f3f3;
+      color: $site-white;
       > ul {
         padding-left: 20px;
         > li {
@@ -84,7 +87,7 @@
     margin-bottom: 0.25em;
     font-size: 0.875em;
     line-height: 1.2;
-    color: #f3f3f3;
+    color: $site-white;
     text-shadow: none;
     text-decoration: none;
     font-family: "PT Sans", Helvetica, sans-serif;
@@ -92,13 +95,13 @@
     outline: 0px;
     border-width: 2px;
     border-style: solid;
-    border-color: darken(#00FF96, 10%);
+    border-color: darken($site-green, 10%);
     border-image: initial;
     background: none;
     border-radius: 0px;
     font-weight: 400;
     &:hover {
-      background-color: darken(#00FF96, 10%);
+      background-color: darken($site-green, 10%);
     }
   }
 }

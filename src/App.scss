@@ -1,3 +1,6 @@
+@import './shared/variables';
+
+
 .app-wrapper {
   display: block;
   min-height: 100vh;
@@ -27,8 +30,18 @@
     display: none;
     position: absolute;
     top: 0; bottom: 0; right: 0; left: 0;
-    //background: rgba(0,0,0,.7);
     z-index: 990;
+  }
+}
+
+.transition-wrapper {
+  position: relative;
+  z-index: 1;
+  .transition-item {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
   }
 }
 
@@ -61,7 +74,7 @@
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     .card-page {
-      background-color: #222;
+      background-color: $site-dark;
       visibility: visible;
       z-index: 90;
       opacity: 1;
@@ -77,8 +90,8 @@
           background: transparent;
           width: 110px;
           height: 110px;
-          border-top: 3px solid #00FF96;
-          border-left: 3px solid #00FF96;
+          border-top: 3px solid $site-green;
+          border-left: 3px solid $site-green;
           left: 20px;
           top: 10px;
           z-index: 0;
@@ -93,7 +106,7 @@
             font-weight: 700;
             line-height: 1.5em;
             font-size: 1.40em;
-            color: #f3f3f3;
+            color: $site-white;
             &:after {
               content: '';
               display: block;
@@ -102,7 +115,7 @@
               height: 100%;
               left: -10px;
               bottom: 0;
-              background-color: #00FF96;
+              background-color: $site-green;
             }
           }
         }
@@ -115,7 +128,7 @@
             position: relative;
             text-align: right;
             > h1 {
-              color: #555;
+              color: $site-light-grey;
             }
             .title {
               display: block;
@@ -130,7 +143,7 @@
                 margin: 0;
                 padding-top: 10px;
                 text-align: center;
-                color: #f3f3f3;
+                color: $site-white;
                 font-size: 2.5em;
 
               }
@@ -139,8 +152,8 @@
               display: inline-block;
               position: relative;
               margin: 0;
-              color: #fff;
-              background-color: darken(#00FF96,15%);
+              color: $site-white;
+              background-color: darken($site-green, 15%);
               padding: 3px 10px;
               font-size: 14px;
               font-weight: 200;
@@ -184,7 +197,7 @@
       > li {
         margin: 0 0 10px;
         .icon {
-          color: #00FF96;
+          color: $site-green;
           margin-right: 7px;
         }
       }
@@ -228,7 +241,7 @@
     width: 30px;
     margin-top: 13px;
     margin-right: 20px;
-    color: #00FF96;
+    color: $site-green;
   }
 }
 
@@ -251,12 +264,12 @@ p {
   font-size: 1em;
   margin: 0 0 10px;
   font-weight: 400;
-  color: #f3f3f3;
+  color: $site-white;
   line-height: 1.6em;
 }
 
 h3 {
-  color: #f3f3f3;
+  color: $site-white;
   font-family: 'Oxygen', Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.5em;
@@ -266,16 +279,16 @@ h3 {
 }
 
 h4 {
-  color: #f3f3f3;
-  font-family: Oxygen, Helvetica, sans-serif;
+  color: $site-white;
+  font-family: 'Oxygen', Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.5em;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
 h5 {
-  color: #f3f3f3;
+  color: $site-white;
   font-family: 'Oxygen', Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.5em;

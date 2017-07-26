@@ -1,8 +1,9 @@
+@import '../../shared/variables';
+
 .home-container {
   position: relative;
   width: 100%;
   height: 100vh;
-  /* padding: 0; */
   //padding: 25px 5%;
   background-color: transparent;
   -webkit-background-size: cover;
@@ -39,7 +40,7 @@
   }
   .home-title {
     margin: 0;
-    color: darken(#00FF96, 15%);
+    color: darken($site-green, 15%);
     font-size: 5.9vw;
     @media (max-width: 772px) {
       font-size: 12vw;
@@ -47,7 +48,7 @@
   }
   .home-sub-title {
     margin: 10px;
-    color: #333;
+    color: $site-hard-grey;
     font-size: 3vmin;
     @media (max-width: 772px) {
       font-size: 5vmin;
@@ -57,7 +58,7 @@
 
 .Typist .Cursor {
   display: inline-block;
-  color: darken(#00FF96,10%);
+  color: darken($site-green, 10%);
   font-size: 3.5vh;
 }
 .Typist .Cursor--blinking {

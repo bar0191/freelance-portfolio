@@ -1,3 +1,5 @@
+@import '../../shared/variables';
+
 .input-field {
   position: relative;
   margin: 0 0 20px;
@@ -6,12 +8,12 @@
     top: 9px;
     right: 12px;
     font-size: 24px;
-    color: #aaa;
+    color: $contact-icon-grey;
   }
   .form-control {
     height: 42px;
     position: relative;
-    border: 1px solid #555;
+    border: 1px solid $site-light-grey;
     border-radius: 0;
     display: block;
     font-size: 0.9em;
@@ -28,7 +30,7 @@
     color: #eee;
     &:active {
       .input-field-icon {
-        color: #00FF96;
+        color: $site-green;
       }
     }
   }
@@ -45,7 +47,7 @@
     position: absolute;
     top: 50%;
     margin-top: -15px;
-    color: #aaa;
+    color: $contact-icon-grey;
   }
   &-text {
     position: relative;
@@ -57,7 +59,7 @@
 }
 
 .send-button {
-  color: #eee;
+  color: $site-white;
   display: inline-block;
   position: relative;
   padding: 0.8em 2em;
@@ -65,13 +67,13 @@
   font-size: 0.875em;
   line-height: 1.2;
   outline: 0;
-  border: 2px solid darken(#00FF96, 15%);
+  border: 2px solid darken($site-green, 15%);
   text-shadow: none;
   background: none;
   border-radius: 0;
   font-family: 'PT Sans', Helvetica, sans-serif;
   &:hover {
-    background-color: darken(#00FF96, 15%);
+    background-color: darken($site-green, 15%);
   }
 }
 
@@ -82,7 +84,7 @@ input:required:focus {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   .input-field-icon {
-    color: #00FF96;
+    color: $site-green;
   }
 }
 
@@ -94,6 +96,6 @@ textarea:required:focus {
   transition: all 0.4s ease-in-out;
   outline: none;
   .input-field-icon {
-    color: #00FF96;
+    color: $site-green;
   }
 }

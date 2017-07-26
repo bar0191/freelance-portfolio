@@ -1,7 +1,6 @@
 @import '../variables';
 
 .site-nav {
-  //border-right: 1px solid $site-dark;
   width: 150px;
   position: fixed;
   z-index: 1030;
@@ -33,8 +32,6 @@
     padding: .8rem 1rem;
     text-align: center;
     position: relative;
-    //height: 4.4em;
-    //margin-left: -1.5rem;
     .nav-list-title {
       color: #f3f3f3;
       font-size: 24px;

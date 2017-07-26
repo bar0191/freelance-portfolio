@@ -1,3 +1,5 @@
+@import '../../../shared/variables';
+
 .mason {
   position: relative;
   overflow: hidden;
@@ -14,7 +16,7 @@
   margin: 0 1% 2% 1%;
   overflow: hidden;
   position: relative;
-  border: 1px solid #676767;
+  border: 1px solid $site-hard-grey;
   > a {
     &:hover {
       .meta {
@@ -45,7 +47,7 @@
       padding: 8px;
       > h1 {
         font-size: 16px;
-        color: #00FF96;
+        color: $site-green;
         margin: 0;
       }
       > p {

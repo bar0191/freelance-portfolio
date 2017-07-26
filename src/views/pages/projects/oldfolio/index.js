@@ -1,22 +1,15 @@
 import React from 'react';
 import ScrollArea from 'react-scrollbar';
 import {Link} from 'react-router';
-import Slider from 'react-slick';
 import ExitIcon from 'react-icons/lib/ti/delete-outline';
 import UserIcon from 'react-icons/lib/fa/user';
 import GlobeIcon from 'react-icons/lib/fa/globe';
 import CalIcon from 'react-icons/lib/fa/calendar';
-
 import OldPort from '../../../../images/oldfolio.png';
-
-const settings = {
-  dots: true
-};
 
 const imgStyle = {
   maxWidth: '180%'
 };
-
 
 export default () => (
   <div className="page-container">
@@ -38,7 +31,7 @@ export default () => (
               <div className="col-sm-7 col-md-7 pad-col-project">
                 <div className="col-sm-7 col-md-7 pad-col-project">
                   <div className="my-photo-block">
-                    <img className="img-responsive" style={imgStyle} src={OldPort}/>
+                    <img className="img-responsive" style={imgStyle} src={OldPort} role="presentation"/>
                   </div>
                 </div>
               </div>

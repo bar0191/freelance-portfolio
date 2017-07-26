@@ -2,11 +2,6 @@ import React from 'react';
 import Typist from 'react-typist';
 import './style.scss';
 
-const headerStyle = {
-  margin: 0,
-  color: '#00FF96'
-};
-
 const tableStyle = {
   paddingBottom: '50px'
 };

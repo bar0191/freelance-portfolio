@@ -184,28 +184,28 @@ export default () => (
             <div className="col-sm-6 col-md-3 pad-col">
 
               <div style={serviceStyle}>
-                <img src={CouchPic} style={serviceImgStyle}/>
+                <img src={CouchPic} style={serviceImgStyle} role="presentation"/>
                 <h4 style={headingStyle}>Modern Back End Development</h4>
                 <p>I have experience with modern NoSQL Databases such as MongoDB and Couchbase, as well as SQL databases such as MySQL and MariaDB.</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
-                <img src={ReactPic} style={serviceImgStyle}/>
+                <img src={ReactPic} style={serviceImgStyle} role="presentation"/>
                 <h4 style={headingStyle}>React Framework</h4>
                 <p>My specialization is in the React Framework, ES6 Javascript, and NodeJS. Using expressJS for most of the backend work. After working with react for over a year now, it is safe to say I have grown a passion for using it.</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
-                <img src={DrupalPic} style={serviceImgStyle}/>
+                <img src={DrupalPic} style={serviceImgStyle} role="presentation"/>
                 <h4 style={headingStyle}>CMS</h4>
                 <p>For more content and SEO focused sites I use Drupal to quickly and efficiently bring a project to life. I have extensive training and experience with Drupal, building custom modules and themes to cater a client needs. </p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
-                <img src={SassPic} style={serviceImgStyle}/>
+                <img src={SassPic} style={serviceImgStyle} role="presentation"/>
                 <h4 style={headingStyle}>Modern Front End Development</h4>
                 <p>Utilising SASS, Bootstrap, grunt, bower etc is part of my standard workflow, and I'm happy working within a GIT, SVN environment.</p>
               </div>
@@ -217,67 +217,67 @@ export default () => (
           <div className="row" style={slideStyle}>
             <Slider {...settings}>
               <div style={serviceStyle}>
-                <img src={DoPic} style={serviceImgStyle}/>
+                <img src={DoPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>Digital Ocean</span>
               </div>
               <div style={serviceStyle}>
-                <img src={BashPic} style={serviceImgStyle}/>
+                <img src={BashPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>Shell</span>
               </div>
               <div style={serviceStyle}>
-                <img src={WordPressPic} style={serviceImgStyle}/>
+                <img src={WordPressPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>Wordpress</span>
               </div>
               <div style={serviceStyle}>
-                <img src={NodePic} style={serviceImgStyle}/>
+                <img src={NodePic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>NodeJS</span>
               </div>
               <div style={serviceStyle}>
-                <img src={BootStrapPic} style={serviceImgStyle}/>
+                <img src={BootStrapPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>Bootstrap</span>
               </div>
               <div style={serviceStyle}>
-                <img src={CssPic} style={serviceImgStyle}/>
+                <img src={CssPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>CSS3</span>
               </div>
               <div style={serviceStyle}>
-                <img src={HtmlPic} style={serviceImgStyle}/>
+                <img src={HtmlPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>HTML5</span>
               </div>
               <div style={serviceStyle}>
-                <img src={JsPic} style={serviceImgStyle}/>
+                <img src={JsPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>Javascript</span>
               </div>
               <div style={serviceStyle}>
-                <img src={CPlusPic} style={serviceImgStyle}/>
+                <img src={CPlusPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>C++</span>
               </div>
               <div style={serviceStyle}>
-                <img src={GitPic} style={serviceImgStyle}/>
+                <img src={GitPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>Git</span>
               </div>
               <div style={serviceStyle}>
-                <img src={SassPic} style={serviceImgStyle}/>
+                <img src={SassPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>Sass/Scss</span>
               </div>
               <div style={serviceStyle}>
-                <img src={DrupalPic} style={serviceImgStyle}/>
+                <img src={DrupalPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>Drupal</span>
               </div>
               <div style={serviceStyle}>
-                <img src={ReactPic} style={serviceImgStyle}/>
+                <img src={ReactPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>ReactJS</span>
               </div>
               <div style={serviceStyle}>
-                <img src={CouchPic} style={serviceImgStyle}/>
+                <img src={CouchPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>Couchbase</span>
               </div>
               <div style={serviceStyle}>
-                <img src={AndroidPic} style={serviceImgStyle}/>
+                <img src={AndroidPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>Android</span>
               </div>
               <div style={serviceStyle}>
-                <img src={ExpressPic} style={serviceImgStyle}/>
+                <img src={ExpressPic} style={serviceImgStyle} role="presentation"/>
                 <span style={slideDescStyle}>ExpressJS</span>
               </div>
             </Slider>

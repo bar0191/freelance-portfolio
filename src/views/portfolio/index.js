@@ -1,7 +1,5 @@
 import React from 'react';
 import ScrollArea from 'react-scrollbar';
-import Masonry from 'react-masonry-component';
-
 import Mason from '../components/masonry';
 
 export default () => (

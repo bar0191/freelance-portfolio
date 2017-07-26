@@ -38,8 +38,8 @@ export default () => (
             <div className="row">
               <div className="col-sm-7 col-md-7 pad-col-project-slider">
                 <Slider {...settings}>
-                  <div><img style={imgStyle} src={CodeBlue}/></div>
-                  <div><img style={imgStyle} src={CodeBlue2}/></div>
+                  <div><img style={imgStyle} src={CodeBlue} role="presentation"/></div>
+                  <div><img style={imgStyle} src={CodeBlue2} role="presentation"/></div>
                 </Slider>
               </div>
               <div className="col-sm-5 col-md-5 pad-col-project">

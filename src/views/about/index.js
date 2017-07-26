@@ -37,7 +37,7 @@ export default () => (
           <div className="row">
             <div className="col-sm-6 col-md-6 col-lg-4 pad-col">
               <div className="my-photo-block">
-                <img className="img-responsive" src={MyPhoto}/>
+                <img className="img-responsive" src={MyPhoto} role="presentation"/>
               </div>
             </div>
             <div className="col-sm-6 col-md-6 col-lg-4">
@@ -77,28 +77,28 @@ export default () => (
           <div className="row">
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
-                <img src={CloudImg} style={serviceImgStyle}/>
+                <img src={CloudImg} style={serviceImgStyle} role="presentation"/>
                 <h4>Cloud Hosting</h4>
                 <p>I've worked with some of the best cloud hosting platforms, such as Digital Ocean and Pantheon.</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
-                <img src={PhoneImg} style={serviceImgStyle}/>
+                <img src={PhoneImg} style={serviceImgStyle} role="presentation"/>
                 <h4>Mobile Design</h4>
                 <p>Now that 60% of web traffic is mobile, it is crucial to design with mobile in mind first.</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
-                <img src={WhiteHatImg} style={serviceImgStyle}/>
+                <img src={WhiteHatImg} style={serviceImgStyle} role="presentation"/>
                 <h4>Security Conscious</h4>
                 <p>With my educational background came a concentration in Cyber Security, and I provide a security conscious service to my clients.</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
-                <img src={CodeImg} style={serviceImgStyle}/>
+                <img src={CodeImg} style={serviceImgStyle} role="presentation"/>
                 <h4>Web Apps</h4>
                 <p>Working with cutting-edge and trending web application frameworks such as ReactJS, NodeJS, Express and NoSQL. </p>
               </div>

@@ -41,9 +41,9 @@ export default () => (
               <div className="col-sm-7 col-md-7 pad-col-project">
                 <div className="col-sm-7 col-md-7 pad-col-project-slider">
                   <Slider {...settings}>
-                    <div><img style={imgStyle} src={PokedexPic}/></div>
-                    <div><img style={imgStyle} src={PokedexPokePic}/></div>
-                    <div><img style={imgStyle} src={PokedexMovePic}/></div>
+                    <div><img style={imgStyle} src={PokedexPic} role="presentation"/></div>
+                    <div><img style={imgStyle} src={PokedexPokePic} role="presentation"/></div>
+                    <div><img style={imgStyle} src={PokedexMovePic} role="presentation"/></div>
                   </Slider>
                 </div>
               </div>
