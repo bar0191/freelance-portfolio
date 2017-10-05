@@ -146,6 +146,20 @@ export default () => (
               </div>
               <div className="timeline">
                 <div className="timeline-item">
+                  <h4 className="timeline-item-title">Junior Drupal Developer</h4>
+                  <span className="timeline-item-period">Aug 2017 - Present</span>
+                  <span className="timeline-item-name">LevelTen Interactive</span>
+                  <span className="timeline-item-desc">
+                    <ul>
+                      <li>PHP/Apache/MySQL</li>
+                      <li>Remote contract development</li>
+                      <li>Module management/development/debugging</li>
+                      <li>Agile development environment</li>
+                      <li>CoDev on company software</li>
+                    </ul>
+                  </span>
+                </div>
+                <div className="timeline-item">
                   <h4 className="timeline-item-title">Drupal Developer Intern</h4>
                   <span className="timeline-item-period">June 2017 - Aug 2017</span>
                   <span className="timeline-item-name">LevelTen Interactive</span>
