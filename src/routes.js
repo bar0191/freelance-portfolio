@@ -9,6 +9,8 @@ import Contact from './views/contact';
 import Page404 from './views/pages/404';
 import CodeBlue from './views/pages/projects/codeblue';
 import LatherBy from './views/pages/projects/latherbynature';
+import LevelTen from './views/pages/projects/levelten';
+import ReactPM from './views/pages/projects/reactpm';
 import OldFolio from './views/pages/projects/oldfolio';
 import Pokedex from './views/pages/projects/pokedex';
 
@@ -22,6 +24,8 @@ export default (
         <Route path='contact' component={Contact}/>
         <Route path='projects/codeblue' component={CodeBlue}/>
         <Route path='projects/latherbynature' component={LatherBy}/>
+        <Route path='projects/levelten' component={LevelTen}/>
+        <Route path='projects/reactpm' component={ReactPM}/>
         <Route path='projects/old-portfolio' component={OldFolio}/>
         <Route path='projects/pokedex' component={Pokedex}/>
       </Route>
