@@ -29,15 +29,6 @@ class NavList extends React.Component {
     }
   }
 
-  /*handleClick = (index, e) => {
-    let c = e.currentTarget.className;
-    e.preventDefault();
-    e.stopPropagation();
-    this.setState({
-      selected: (c.indexOf('selected') >= 0) ? '' : index
-    })
-  };*/
-
   render() {
     const NavStyle = {
       padding: '25px 0 30px'
