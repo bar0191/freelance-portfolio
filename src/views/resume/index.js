@@ -156,6 +156,7 @@ export default () => (
                       <li>Module management/development/debugging</li>
                       <li>Agile development environment</li>
                       <li>CoDev on company software</li>
+                      <li>Redesigned agency website, convert from bootstrap 2 to 3</li>
                     </ul>
                   </span>
                 </div>
