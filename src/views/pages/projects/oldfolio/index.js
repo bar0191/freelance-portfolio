@@ -39,7 +39,7 @@ export default () => (
                 <div className="block-title"><h3>Description</h3></div>
                 <ul className="project-info">
                   <li><p><UserIcon className="icon"/>Brandon Reid</p></li>
-                  <li><p><GlobeIcon className="icon"/><a href="http://portal.cprlifeguard.com/">portal.cprlifeguard.com</a></p></li>
+                  <li><p><GlobeIcon className="icon"/><a href="https://bar0191.github.io/react-portfolio/">bar0191.github.io/react-portfolio</a></p></li>
                   <li><p><CalIcon className="icon"/>Spring 2017</p></li>
                 </ul>
                 <p className="text-justify">This project was my first portfolio site, along with my first production ReactJS site. This project uses purely reactJS and Bootstrap, hosted on github pages.</p>
