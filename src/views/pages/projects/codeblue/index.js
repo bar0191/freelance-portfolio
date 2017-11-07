@@ -36,17 +36,17 @@ export default () => (
               </div>
             </div>
             <div className="row">
-              <div className="col-sm-7 col-md-7 pad-col-project-slider">
+              <div className="pad-col-project-slider">
                 <Slider {...settings}>
                   <div><img style={imgStyle} src={CodeBlue} role="presentation"/></div>
                   <div><img style={imgStyle} src={CodeBlue2} role="presentation"/></div>
                 </Slider>
               </div>
-              <div className="col-sm-5 col-md-5 pad-col-project">
+              <div className="pad-col-project">
                 <div className="block-title"><h3>Description</h3></div>
                 <ul className="project-info">
                   <li><p><UserIcon className="icon"/>Brandon Reid</p></li>
-                  <li><p><GlobeIcon className="icon"/><a href="http://portal.cprlifeguard.com/">portal.cprlifeguard.com</a></p></li>
+                  <li><p><GlobeIcon className="icon"/>site currently down by UNT</p></li>
                   <li><p><CalIcon className="icon"/>May 2017</p></li>
                 </ul>
                 <p className="text-justify">A project done in conjunction with Dr. Dantu at the University of North Texas and Texas Presbyterian Hospital. Essentially, this web application provided an admin interface to doctors and researchers for monitoring CPR quality. This web application was connected to a database that was pulling session data from live CPR instances. The goal of the project as a whole, was to bring better CPR quality to health professionals overall.</p>
