@@ -13,6 +13,7 @@ import LevelTen from './views/pages/projects/levelten';
 import ReactPM from './views/pages/projects/reactpm';
 import OldFolio from './views/pages/projects/oldfolio';
 import Pokedex from './views/pages/projects/pokedex';
+import Intel from './views/pages/projects/intelwp';
 
 export default (
     <Route>
@@ -25,6 +26,7 @@ export default (
         <Route path='projects/codeblue' component={CodeBlue}/>
         <Route path='projects/latherbynature' component={LatherBy}/>
         <Route path='projects/levelten' component={LevelTen}/>
+        <Route path='projects/intelwp' component={Intel}/>
         <Route path='projects/reactpm' component={ReactPM}/>
         <Route path='projects/old-portfolio' component={OldFolio}/>
         <Route path='projects/pokedex' component={Pokedex}/>
