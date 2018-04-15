@@ -36,12 +36,6 @@ export default () => (
               </div>
             </div>
             <div className="row">
-              <div className="pad-col-project-slider">
-                <Slider {...settings}>
-                  <div><img style={imgStyle} src={CodeBlue} role="presentation"/></div>
-                  <div><img style={imgStyle} src={CodeBlue2} role="presentation"/></div>
-                </Slider>
-              </div>
               <div className="pad-col-project">
                 <div className="block-title"><h3>Description</h3></div>
                 <ul className="project-info">
@@ -63,6 +57,12 @@ export default () => (
                     <li><a>Digital Ocean</a></li>
                   </ul>
                 </div>
+              </div>
+              <div className="pad-col-project-slider">
+                <Slider {...settings}>
+                  <div><img style={imgStyle} src={CodeBlue} alt=""/></div>
+                  <div><img style={imgStyle} src={CodeBlue2} alt=""/></div>
+                </Slider>
               </div>
             </div>
           </div>

@@ -31,18 +31,17 @@ export default () => (
           <div className="card-title-section">
             <div className="card-title-wrap clearfix">
               <h1 className="title">About Me</h1>
-              <h5 className="subtitle-section">Code Monkey, Copy Cat, Doer</h5>
+              <h5 className="subtitle-section">Code Monkey</h5>
             </div>
           </div>
           <div className="row">
             <div className="col-sm-6 col-md-6 col-lg-4 pad-col">
               <div className="my-photo-block">
-                <img className="img-responsive" src={MyPhoto} role="presentation"/>
+                <img className="img-responsive" src={MyPhoto} alt=""/>
               </div>
             </div>
             <div className="col-sm-6 col-md-6 col-lg-4">
               <h3>A Student, Researcher, and Freelancer</h3>
-              <p>I'm currently pursuing a bachelors degree in Information Technology with a security concentration at the University of North Texas, and I'm going on my senior year. My interests are in full stack development, cyber security, and drone technology. I've lived in the DFW area all of my life, and grew up absorbed in technology. My father introduced me to an apple II at the age of 3, and he swears I was hooked ever since.</p>
               <p>I've always had a passion for technology, and consider myself as a generalist and a futurist. In my free time, I enjoys attending hackathons, working on react.js projects, and have recently started building my first racing drone. As a generalist, I enjoys using my keen learning abilities, and my vigorous work ethic to achieve any task or accomplish any goal.</p>
             </div>
             <div className="col-sm-6 col-md-6 col-lg-4 pad-col">
@@ -77,28 +76,28 @@ export default () => (
           <div className="row">
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
-                <img src={CloudImg} style={serviceImgStyle} role="presentation"/>
+                <img src={CloudImg} style={serviceImgStyle} alt=""/>
                 <h4>Cloud Hosting</h4>
                 <p>I've worked with some of the best cloud hosting platforms, such as Digital Ocean and Pantheon.</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
-                <img src={PhoneImg} style={serviceImgStyle} role="presentation"/>
+                <img src={PhoneImg} style={serviceImgStyle} alt=""/>
                 <h4>Mobile Design</h4>
                 <p>Now that 60% of web traffic is mobile, it is crucial to design with mobile in mind first.</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
-                <img src={WhiteHatImg} style={serviceImgStyle} role="presentation"/>
+                <img src={WhiteHatImg} style={serviceImgStyle} alt=""/>
                 <h4>Security Conscious</h4>
                 <p>With my educational background came a concentration in Cyber Security, and I provide a security conscious service to my clients.</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
-                <img src={CodeImg} style={serviceImgStyle} role="presentation"/>
+                <img src={CodeImg} style={serviceImgStyle} alt=""/>
                 <h4>Web Apps</h4>
                 <p>Working with cutting-edge and trending web application frameworks such as ReactJS, NodeJS, Express and NoSQL. </p>
               </div>

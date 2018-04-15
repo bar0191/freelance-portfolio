@@ -8,7 +8,7 @@ import CalIcon from 'react-icons/lib/fa/calendar';
 import OldPort from '../../../../images/oldfolio.png';
 
 const imgStyle = {
-  maxWidth: '180%'
+  maxWidth: '100%'
 };
 
 export default () => (
@@ -28,14 +28,7 @@ export default () => (
               </div>
             </div>
             <div className="row">
-              <div className="col-sm-7 col-md-7 pad-col-project">
-                <div className="col-sm-7 col-md-7 pad-col-project">
-                  <div className="my-photo-block">
-                    <img className="img-responsive" style={imgStyle} src={OldPort} role="presentation"/>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-5 col-md-5 pad-col-project">
+              <div className="pad-col-project">
                 <div className="block-title"><h3>Description</h3></div>
                 <ul className="project-info">
                   <li><p><UserIcon className="icon"/>Brandon Reid</p></li>
@@ -52,6 +45,11 @@ export default () => (
                     <li><a>HTML5</a></li>
                     <li><a>GitPages</a></li>
                   </ul>
+                </div>
+              </div>
+              <div className="pad-col-project">
+                <div className="my-photo-block">
+                  <img className="img-responsive" style={imgStyle} src={OldPort} alt=""/>
                 </div>
               </div>
             </div>

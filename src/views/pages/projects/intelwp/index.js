@@ -38,16 +38,7 @@ export default () => (
               </div>
             </div>
             <div className="row">
-              <div className="col-sm-7 col-md-7 pad-col-project">
-                <div className="col-sm-7 col-md-7 pad-col-project-slider">
-                  <Slider {...settings}>
-                    <div><img style={imgStyle} src={intelLandingPic} role="presentation"/></div>
-                    <div><img style={imgStyle} src={intelFeatPic} role="presentation"/></div>
-                    <div><img style={imgStyle} src={intelBlogPic} role="presentation"/></div>
-                  </Slider>
-                </div>
-              </div>
-              <div className="col-sm-5 col-md-5 pad-col-project">
+              <div className="pad-col-project">
                 <div className="block-title"><h3>Description</h3></div>
                 <ul className="project-info">
                   <li><p><UserIcon className="icon"/>Brandon Reid</p></li>
@@ -67,6 +58,13 @@ export default () => (
                     <li><a>Redesign</a></li>
                   </ul>
                 </div>
+              </div>
+              <div className="pad-col-project-slider">
+                <Slider {...settings}>
+                  <div><img style={imgStyle} src={intelLandingPic} alt=""/></div>
+                  <div><img style={imgStyle} src={intelFeatPic} alt=""/></div>
+                  <div><img style={imgStyle} src={intelBlogPic} alt=""/></div>
+                </Slider>
               </div>
             </div>
           </div>

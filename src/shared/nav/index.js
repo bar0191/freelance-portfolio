@@ -15,7 +15,7 @@ import './style.scss';
 const NavHead = () => (
   <header className="nav-head">
     <div className="my-photo">
-      <img src={MyPic} width="75px" height="75px" role="presentation" />
+      <img src={MyPic} width="75px" height="75px" alt="" />
     </div>
     <strong className="h1 nav-list-title">Brandon Reid</strong>
   </header>
@@ -59,7 +59,7 @@ class NavList extends React.Component {
 
 
 export default (props) => (
-  <nav className={`site-nav ${props.mini ? 'mini' : ''}`} role="navigation">
+  <nav className={`site-nav ${props.mini ? 'mini' : ''}`}>
     <ScrollArea
       className="nav-list-container"
       horizontal={false}

@@ -25,7 +25,7 @@ export default () => (
             </div>
             <div className="row">
               <div className="col-sm-7 col-md-7 pad-col-project-slider">
-                <img className="img-responsive" src={LatherBy} role="presentation"/>
+                <img className="img-responsive" src={LatherBy} alt=""/>
               </div>
               <div className="col-sm-5 col-md-5 pad-col-project">
                 <div className="block-title"><h3>Description</h3></div>
