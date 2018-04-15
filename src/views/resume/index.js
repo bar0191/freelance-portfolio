@@ -20,6 +20,7 @@ import BootStrapPic from '../../images/logo-bootstrap-4.png';
 import CPlusPic from '../../images/c-logo.png';
 import BashPic from '../../images/App-Terminal.png';
 import AndroidPic from '../../images/android.png';
+import FirebasePic from '../../images/firebase.png';
 
 
 const colStyle = {
@@ -85,7 +86,8 @@ const slideStyle = {
 const slideDescStyle = {
   color: '#f3f3f3',
   paddingTop: '10px',
-  display: 'block'
+  display: 'block',
+  textAlign: 'center'
 };
 
 export default () => (
@@ -124,6 +126,7 @@ export default () => (
                       <li>Member of Cyber Security Association - 2 years</li>
                       <li>Undergraduate research assistant with Computer Science Dept.</li>
                       <li>President's List both Spring and Fall Semesters in 2017</li>
+                      <li>Worked with City of Denton to create 311 mobile application</li>
                     </ul>
                   </span>
                 </div>
@@ -147,7 +150,7 @@ export default () => (
               <div className="timeline">
                 <div className="timeline-item">
                   <h4 className="timeline-item-title">Junior Drupal Developer</h4>
-                  <span className="timeline-item-period">Aug 2017 - Present</span>
+                  <span className="timeline-item-period">Aug 2017 - Feb 2018</span>
                   <span className="timeline-item-name">LevelTen Interactive</span>
                   <span className="timeline-item-desc">
                     <ul>
@@ -192,35 +195,34 @@ export default () => (
               </div>
             </div>
           </div>
+          <div className="block-title" style={colStyle}>
+            <h3>Skills</h3>
+          </div>
           <div className="row">
-            <div className="block-title" style={colStyle}>
-              <h3>Skills</h3>
-            </div>
             <div className="col-sm-6 col-md-3 pad-col">
-
               <div style={serviceStyle}>
-                <img src={CouchPic} style={serviceImgStyle} role="presentation"/>
+                <img src={CouchPic} style={serviceImgStyle} alt=""/>
                 <h4 style={headingStyle}>Modern Back End Development</h4>
                 <p>I have experience with modern NoSQL Databases such as MongoDB and Couchbase, as well as SQL databases such as MySQL and MariaDB.</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
-                <img src={ReactPic} style={serviceImgStyle} role="presentation"/>
+                <img src={ReactPic} style={serviceImgStyle} alt=""/>
                 <h4 style={headingStyle}>React Framework</h4>
                 <p>My specialization is in the React Framework, ES6 Javascript, and NodeJS. Using expressJS for most of the backend work. After working with react for over a year now, it is safe to say I have grown a passion for using it.</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
-                <img src={DrupalPic} style={serviceImgStyle} role="presentation"/>
+                <img src={DrupalPic} style={serviceImgStyle} alt=""/>
                 <h4 style={headingStyle}>CMS</h4>
                 <p>For more content and SEO focused sites I use Drupal to quickly and efficiently bring a project to life. I have extensive training and experience with Drupal, building custom modules and themes to cater a client needs. </p>
               </div>
             </div>
             <div className="col-sm-6 col-md-3 pad-col">
               <div style={serviceStyle}>
-                <img src={SassPic} style={serviceImgStyle} role="presentation"/>
+                <img src={SassPic} style={serviceImgStyle} alt=""/>
                 <h4 style={headingStyle}>Modern Front End Development</h4>
                 <p>Utilising SASS, Bootstrap, grunt, bower etc is part of my standard workflow, and I'm happy working within a GIT, SVN environment.</p>
               </div>
@@ -229,70 +231,74 @@ export default () => (
           <div className="block-title" style={colStyle}>
             <h3>Technology Summary</h3>
           </div>
-          <div className="row" style={slideStyle}>
+          <div style={slideStyle}>
             <Slider {...settings}>
               <div style={serviceStyle}>
-                <img src={DoPic} style={serviceImgStyle} role="presentation"/>
+                <img src={DoPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>Digital Ocean</span>
               </div>
               <div style={serviceStyle}>
-                <img src={BashPic} style={serviceImgStyle} role="presentation"/>
+                <img src={BashPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>Shell</span>
               </div>
               <div style={serviceStyle}>
-                <img src={WordPressPic} style={serviceImgStyle} role="presentation"/>
+                <img src={WordPressPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>Wordpress</span>
               </div>
               <div style={serviceStyle}>
-                <img src={NodePic} style={serviceImgStyle} role="presentation"/>
+                <img src={NodePic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>NodeJS</span>
               </div>
               <div style={serviceStyle}>
-                <img src={BootStrapPic} style={serviceImgStyle} role="presentation"/>
+                <img src={BootStrapPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>Bootstrap</span>
               </div>
               <div style={serviceStyle}>
-                <img src={CssPic} style={serviceImgStyle} role="presentation"/>
+                <img src={CssPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>CSS3</span>
               </div>
               <div style={serviceStyle}>
-                <img src={HtmlPic} style={serviceImgStyle} role="presentation"/>
+                <img src={HtmlPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>HTML5</span>
               </div>
               <div style={serviceStyle}>
-                <img src={JsPic} style={serviceImgStyle} role="presentation"/>
+                <img src={JsPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>Javascript</span>
               </div>
               <div style={serviceStyle}>
-                <img src={CPlusPic} style={serviceImgStyle} role="presentation"/>
+                <img src={CPlusPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>C++</span>
               </div>
               <div style={serviceStyle}>
-                <img src={GitPic} style={serviceImgStyle} role="presentation"/>
+                <img src={GitPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>Git</span>
               </div>
               <div style={serviceStyle}>
-                <img src={SassPic} style={serviceImgStyle} role="presentation"/>
+                <img src={SassPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>Sass/Scss</span>
               </div>
               <div style={serviceStyle}>
-                <img src={DrupalPic} style={serviceImgStyle} role="presentation"/>
+                <img src={DrupalPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>Drupal</span>
               </div>
               <div style={serviceStyle}>
-                <img src={ReactPic} style={serviceImgStyle} role="presentation"/>
+                <img src={FirebasePic} style={serviceImgStyle} alt=""/>
+                <span style={slideDescStyle}>Firebase</span>
+              </div>
+              <div style={serviceStyle}>
+                <img src={ReactPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>ReactJS</span>
               </div>
               <div style={serviceStyle}>
-                <img src={CouchPic} style={serviceImgStyle} role="presentation"/>
+                <img src={CouchPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>Couchbase</span>
               </div>
               <div style={serviceStyle}>
-                <img src={AndroidPic} style={serviceImgStyle} role="presentation"/>
+                <img src={AndroidPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>Android</span>
               </div>
               <div style={serviceStyle}>
-                <img src={ExpressPic} style={serviceImgStyle} role="presentation"/>
+                <img src={ExpressPic} style={serviceImgStyle} alt=""/>
                 <span style={slideDescStyle}>ExpressJS</span>
               </div>
             </Slider>
