@@ -1,0 +1,18 @@
+.error-wrapper {
+  display: block;
+  min-height: 100vh;
+  background: url("../../../images/404-error.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .error-wrapper .content {
+    height: 100vh; }
+    .error-wrapper .content > a {
+      top: 75%;
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 200px;
+      text-align: center;
+      cursor: pointer; }

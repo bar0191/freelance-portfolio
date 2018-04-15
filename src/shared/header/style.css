@@ -1,0 +1,24 @@
+.site-head {
+  height: 50px;
+  width: 100%;
+  background-color: #222;
+  border-bottom: 2px solid; }
+  @media (min-width: 992px) {
+    .site-head {
+      display: none; } }
+  .site-head .site-head-title {
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Oxygen', Helvetica, sans-serif;
+    margin-left: 15px;
+    line-height: 45px;
+    color: white; }
+
+.menu-icon {
+  cursor: pointer;
+  overflow: hidden;
+  float: right;
+  margin-right: 20px;
+  margin-top: 6px; }
