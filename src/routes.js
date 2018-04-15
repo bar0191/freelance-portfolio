@@ -14,6 +14,7 @@ import ReactPM from './views/pages/projects/reactpm';
 import OldFolio from './views/pages/projects/oldfolio';
 import Pokedex from './views/pages/projects/pokedex';
 import Intel from './views/pages/projects/intelwp';
+import Denton from './views/pages/projects/denton311';
 
 export default (
     <Route>
@@ -30,6 +31,7 @@ export default (
         <Route path='projects/reactpm' component={ReactPM}/>
         <Route path='projects/old-portfolio' component={OldFolio}/>
         <Route path='projects/pokedex' component={Pokedex}/>
+        <Route path='projects/denton311' component={Denton}/>
       </Route>
       <Route path="404" component={Page404}/>
       <Redirect from="*" to="404"/>
